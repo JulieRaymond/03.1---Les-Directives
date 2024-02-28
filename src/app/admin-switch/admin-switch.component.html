@@ -1,0 +1,4 @@
+<h1 [ngStyle]="{ color: isAdmin ? 'red' : 'inherit' }">Bonjour !</h1>
+<button *ngIf="isAdmin">Edit</button>
+<button>View</button>
+<button (click)="toggleAdmin()">Toggle isAdmin</button>
